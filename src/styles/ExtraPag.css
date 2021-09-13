@@ -1,0 +1,21 @@
+.extra-pag{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra-pag h2 {
+    background-color: brown;
+    padding: 3vh;
+    border-radius: 10px;
+}
+.extra-pag h3 {
+    background-color: brown;
+    padding: 2vh;
+    border-radius: 10px;
+}
+.Link{
+    padding: 2vh;
+}

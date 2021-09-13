@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter , Switch, Route } from 'react-router-dom';
 
-function App() {
+
+// COMPONENTES
+import PaisesPrincipal from "./componentes/PaisesPrincipal"
+import TopPaises from './componentes/TopPaises';
+import Secciones from './componentes/interacciones/Secciones';
+import Header from './componentes/Header';
+import PaisesSearch from './componentes/PaisesSearch';
+
+
+// paginas extras
+import TotalPaises from './componentes/paginaExtra/TotalPaises';
+
+const App = () => {
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact>
+          <div className="App">
+            <section>
+                <Header/>
+                <PaisesSearch/>
+                <Secciones/>
+                <TopPaises/>
+                <PaisesPrincipal/>                
+            </section>
+          </div>
+        </Route>         
+        <Route path="/detalles/:nombre" exact>
+          <TotalPaises/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

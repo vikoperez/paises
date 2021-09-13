@@ -1,0 +1,15 @@
+.error-peligro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    background-color: red;
+    margin-top: 3vh;
+}
+
+.error-peligro p{
+    background-color: black;
+    padding: 1.5vh;
+    color: white;
+}

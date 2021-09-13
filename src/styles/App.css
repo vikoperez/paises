@@ -1,0 +1,67 @@
+.App{
+    background-color: #FFC069
+
+}
+
+.titulo-paises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primer-pagina{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapeo{   
+    width: 30vw;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 3vh;
+    
+}
+
+.mapeo-img{
+    width: 100%;
+    height: 75%;
+    border: solid black 1px;
+    background-color: black;
+}
+
+.boton-paises{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boton-paises button{
+    margin-top: 5vh;
+    padding: 2vh;
+    background-color: #FFB344;
+    border-radius: 15px;
+    border: solid black 1px;
+    
+}
+.boton-paises a{
+    margin-top: 5vh;
+    padding: 2vh;
+    background-color: #FFB344;
+    border-radius: 15px;
+    border: solid black 1px;
+    color: black;
+}
+
+.info-pais{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFE459;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0%;
+}
+
+

@@ -1,0 +1,20 @@
+.contenedor-paises{
+    width: 40vw;
+    margin:auto;
+    margin-top: 3vh;
+    text-align: center;
+    border: solid black 1px;
+    background-color: #FFE459;
+    margin-bottom: 3vh;
+}
+
+.contenedor-paises img{
+    max-width: 100%;
+}
+
+.Link{
+    background-color: #FFB344;
+    color: black;
+    padding: 2vh;
+    border: solid black 1px;
+}
