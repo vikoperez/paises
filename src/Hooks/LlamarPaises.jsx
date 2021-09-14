@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import {useState,useEffect} from "react";
 
 const LlamarPaises = (url) => {
     const [paises, setPaises] = useState ([]);
@@ -18,7 +18,8 @@ const LlamarPaises = (url) => {
 
     useEffect(() => {
         fetchPaisesApi();
-    }, []);
+        //eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [paises ]);
 
 
     return paises;

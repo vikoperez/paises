@@ -18,7 +18,7 @@ const PaisesPrincipal = () => {
         <div>
             
             <div className="primer-pagina">
-                {verMas.map(paises=>(
+                {verMas.map((paises)=>(
                     <MapeoPaises
                     img={paises.flag}
                     name={paises.name}
@@ -28,7 +28,7 @@ const PaisesPrincipal = () => {
                 ))}
             </div>
             
-            <div className="boton-paises">
+            <div className="boton-paises" >
                 <button onClick={()=>{
                     setFinal(final-9);
                     setInicial(inicial-0);

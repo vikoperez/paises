@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 
 import "../../styles/ExtraPag.css"
 
-const TotalPaises = props=>{
+const TotalPaises = props =>{
 
-    const {nombre} = useParams();
-    console.log(nombre)
-    const [detalles, setDetalles] = useState([]);
+    const {nombre} = useParams(null);
+    const [detalles, setDetalles] = useState([0]);
 
     const TraerApiOtraVez = async() =>{
 
@@ -26,7 +25,8 @@ const TotalPaises = props=>{
 
     useEffect(()=>{
         TraerApiOtraVez();
-    }, []);
+        //eslint-disable-next-line react-hooks/exhaustive-deps
+    },[detalles ]);
 
     
     return(
