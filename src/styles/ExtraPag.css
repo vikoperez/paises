@@ -1,5 +1,5 @@
 .extra-pag{
-    background-color: blue;
+    background-color: #0F044C;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,15 +7,40 @@
 }
 
 .extra-pag h2 {
-    background-color: brown;
-    padding: 3vh;
-    border-radius: 10px;
-}
-.extra-pag h3 {
-    background-color: brown;
+    background-color: #787A91;
     padding: 2vh;
     border-radius: 10px;
+    border: solid black 1px;
+}
+.extra-pag h3 {
+    background-color: #787A91;
+    padding: 2vh;
+    border-radius: 10px;
+    border: solid black 1px;
 }
 .Link{
     padding: 2vh;
+    background-color: #EEEEEE;
+}
+
+.extra-pag img {
+    width: 300px;
+    height: 199.5px;
+    border: solid black 1px;
+    background-color: #787A91;
+}
+
+.sub-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-info p{
+    padding: 2vh;
+    border: solid black 1px;
+    width: 20vh;
+    background-color: #787A91;
+    
 }

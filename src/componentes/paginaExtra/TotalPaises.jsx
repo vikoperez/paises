@@ -16,7 +16,7 @@ const TotalPaises = props=>{
             const response= await fetch(`https://restcountries.eu/rest/v2/name/${nombre}`);
             
             const resultado = await response.json();
-            setDetalles (resultado);
+            setDetalles (resultado[0]);
             console.log (resultado);
         }catch(error){
             console.log (error);
@@ -33,12 +33,17 @@ const TotalPaises = props=>{
 
         <div>
             
-            <div className="extra-pag">
+            <div className="extra-pag" >
                 <h2> Nombre: {detalles.name}</h2>
                 <h3> Capital: {detalles.capital}</h3>
                 <img src={detalles.flag} alt={detalles.name}/>
-                <p> Region: {detalles.region}</p>
-                
+                <div className="sub-info">
+                    <p> Region: {detalles.region}</p>
+                    <p> population: {detalles.population}</p>
+                    <p> region: {detalles.region}</p>
+                    <p> subregion: {detalles.subregion}</p>
+                </div>
+
                 <Link
                     className="Link"
                     to={`/`}
